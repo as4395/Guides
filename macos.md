@@ -1,12 +1,3 @@
-<!--
-Title: Configure macOS for Privacy and Security
-Description: Harden macOS with focused system settings, optional tools, and persistent hostname/MAC spoofing.
-Author: Abhiram S
-Contributors: Abhiram S
-Publication date: 2025-07-07T00:00:00.000Z
-Listed: true
--->
-
 # Configure macOS for Privacy and Security
 
 This guide walks through configuring macOS for better privacy, stronger local security, and optional tools like battery charge limiting and system spoofing.
