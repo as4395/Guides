@@ -6,6 +6,7 @@ These guides help you improve your digital privacy and security across apps and 
 
 - [Configure macOS for Privacy and Security](./macos.md)
 - [Configure Firefox for Privacy and Security](./firefox.md)
+- [Configure BurpSuite Proxy with Firefox on macOS](./burpsuite-firefox-proxy.md)
 
 ## Philosophy
 
