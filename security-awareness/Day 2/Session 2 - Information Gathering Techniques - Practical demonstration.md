@@ -1,6 +1,8 @@
-# Information Gathering Overview
+# **Information Gathering Overview**
 
-## Objectives
+---
+
+## **Objectives**
 - Understanding Information Gathering Concepts
 - Understanding Information Gathering through Search Engines and Advanced Google Hacking Techniques
 - Understanding Information Gathering through Web Services and Social Networking Sites
@@ -11,7 +13,7 @@
 
 ---
 
-## 1) Information Gathering Concepts
+## 1) **Information Gathering Concepts**
 
 ### What is Information Gathering (Footprinting)?
 - **Footprinting** is the first step in any attack, where an attacker collects information about a target network to identify potential ways to intrude.
@@ -19,11 +21,11 @@
   - **Active Fingerprinting**: Gathering information with direct interaction.
 
 ### Types of Information Gathered in Footprinting:
-1. **Organization Information**: 
+1. **Organization Information**:  
    - Employee details, telephone numbers, location, web technologies.
-2. **Network Information**: 
+2. **Network Information**:  
    - Domain, sub-domains, network blocks, IP addresses, WHOIS records, DNS information.
-3. **System Information**:
+3. **System Information**:  
    - OS, web server details, users, and passwords.
 
 ### Objectives of Fingerprinting:
@@ -34,16 +36,17 @@
 
 ---
 
-## 2) Information Gathering Methodology
+## 2) **Information Gathering Methodology**
 
 ### Footprinting through Search Engines
 - **Search Engines**: Attackers use search engines (Google, Bing, Yahoo, etc.) to gather information about a target, including:
   - Employed technologies, employee details, login pages, intranet portals.
-  - **Advanced Google Hacking Techniques**: Google search operators help attackers extract sensitive information.
+  
+- **Advanced Google Hacking Techniques**: Google search operators help attackers extract sensitive information.
     - Examples of Google Operators:
       - `[cache:]`, `[link:]`, `[related:]`, `[site:]`, `[inurl:]`
     - **Google Hacking Database (GHDB)**: A source for querying sensitive information via Google Dorks.
-  
+
 ### Popular Search Operators for Google Hacking:
 - **VoIP and VPN Footprinting**: 
   - Example Google Dorks for VoIP and VPN fingerprinting:
@@ -63,7 +66,7 @@
 
 ---
 
-## 3) Finding a Company’s Top-Level Domain (TLDs) and Sub-domains
+## 3) **Finding a Company’s Top-Level Domain (TLDs) and Sub-domains**
 - **Sub-domains** reveal details about departments and services.
   - Tools: **Sublist3r** (Python script), **Netcraft**.
 
@@ -76,7 +79,7 @@
 
 ---
 
-## 4) Gathering Information from Social Networking Sites
+## 4) **Gathering Information from Social Networking Sites**
 
 ### LinkedIn Information Gathering
 - Attackers use the **Harvester** tool to enumerate LinkedIn and find employees of a target company along with their job titles. This information can be used for social engineering.
@@ -92,7 +95,7 @@
 
 ---
 
-## 5) Information Gathering Tools
+## 5) **Information Gathering Tools**
 
 ### Deep and Dark Web Footprinting
 - **Deep Web**: Unindexed web content that can only be accessed through specific search engines like **Tor Browser**.
@@ -104,7 +107,7 @@
 
 ---
 
-## 6) VoIP and VPN Footprinting
+## 6) **VoIP and VPN Footprinting**
 
 ### SHODAN for VoIP and VPN Footprinting:
 - Attackers use **SHODAN** to find exposed VoIP devices, routers, and VPNs that could be vulnerable.
@@ -112,14 +115,14 @@
 
 ---
 
-## 7) Competitive Intelligence Gathering
+## 7) **Competitive Intelligence Gathering**
 
 ### Sources of Competitive Intelligence:
 - Company websites, job ads, press releases, patents, trademarks, annual reports, social engineering, etc.
 
 ---
 
-## 8) Information Gathering from Web Services
+## 8) **Information Gathering from Web Services**
 
 ### Business Profile Sites:
 - Attackers gather business information like contact details, partners, and services from online business profiles.
@@ -132,7 +135,7 @@
 
 ---
 
-## 9) Website Information Gathering
+## 9) **Website Information Gathering**
 
 ### Website Footprinting:
 - Tools like **Burp Suite**, **Zaproxy**, and **Wappalyzer** help attackers gather information about the technologies, operating systems, and server details of a target website.
@@ -151,6 +154,6 @@
 
 ---
 
-## 10) Information Gathering Countermeasures
+## 10) **Information Gathering Countermeasures**
 
 - **Countermeasures** include using strong encryption, limiting public exposure, restricting access to sensitive data, and regularly monitoring your web infrastructure for vulnerabilities.
