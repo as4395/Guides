@@ -17,7 +17,7 @@ When downloading apps from the App Store, it’s important to evaluate whether t
 For this app, the privacy policy shows that it collects a lot of unnecessary data. It’s concerning that so much information is being gathered when the app doesn’t even need to be connected to the Internet to function.
 
 ### Step 3: Compare with a Privacy-Conscious App
-- **Proton Mail**, which I personally use for email, is a good example of a more privacy-conscious app.
+- **Proton Mail**, which I use for email, is a good example of a more privacy-conscious app.
 - For Proton Mail, if you scroll down to the **App Privacy** section, you’ll only see the category **"Data Not Linked to You"**.
 - The only data Proton Mail collects is **diagnostics**, typically to log any app crashes.
   
@@ -36,7 +36,7 @@ Unfortunately, **Little Snitch** isn’t available for iOS because Apple’s gui
 
 ### Step 6: What If Developers Lie About Data Collection?
 - All app developers must provide a privacy policy and explicitly state what data they collect.
-- If an app claims it’s not collecting data when it actually is, Apple will refuse the app submission.
+- If an app claims it’s not collecting data when it is, Apple will refuse the app submission.
 - However, you should always verify these claims by looking into the privacy policy or researching the developer's background.
 
 ### Conclusion
