@@ -4,11 +4,13 @@
 
 ## 1. Overview of TailsOS
 
-**TailsOS** (The Amnesic Incognito Live System) is a Debian-based operating system focused on privacy, security, and anonymity. It’s designed to be used from a USB flash drive, without leaving traces on the device it’s run on.
+**TailsOS** is a Debian-based operating system focused on privacy, security, and anonymity. It’s designed to be used from a USB flash drive, without leaving traces on the device it’s run on.
+
+---
 
 ### Key Features
 
-- **Live Operating System**: Tails runs directly from a USB stick—no installation on your internal hard drive required.
+- **Live Operating System**: Tails runs directly from a USB stick and no installation on your internal hard drive is required.
 - **Amnesic**: By default, Tails forgets everything when shut down. All files and activities are stored in memory (RAM), which is wiped on power-off.
 - **Tor Integration**: All internet traffic is routed through the Tor network by default, using onion routing to help maintain anonymity.
 - **Persistent Storage**: You can optionally set up an encrypted partition to save certain files, such as:
@@ -21,6 +23,8 @@
 - **Recommended by**:  
   - The **Tor Project**  
   - The **Electronic Frontier Foundation (EFF)**
+ 
+---
 
 ### Use Cases
 
@@ -34,6 +38,8 @@ Examples of compartmentalized use:
 - Managing **PGP master keys** in Tails and transferring subkeys to a **YubiKey** for secure signing.
 - Using a **read-only, offline Raspberry Pi** to generate encrypted paper backups.
 
+---
+
 ### System Requirements
 
 - A USB stick (8 GB minimum)
@@ -45,7 +51,9 @@ Examples of compartmentalized use:
   - Newer Macs with Apple (M1/M2) chips
   - Smartphones or tablets
   - Raspberry Pi devices
-  - Most systems with NVIDIA or AMD Radeon GPUs
+  - Most systems with Nvidia or AMD Radeon GPUs
+
+---
 
 ### Limitations
 
@@ -57,6 +65,8 @@ Examples of compartmentalized use:
 ---
 
 ## 2. Installing Tails from macOS
+
+---
 
 ### Step 1: Install Prerequisites
 
@@ -70,7 +80,10 @@ brew install gnupg
 gpg --version
 ```
 
+---
+
 ### Step 2: Download Tails
+
 Download the `.img` and `.img.sig` files from the official website:
 [https://tails.net/install/download/index.en.html](https://tails.net/install/download/index.en.html)
 
@@ -85,17 +98,25 @@ curl -o ~/Downloads/tails-amd64-$TAILS_RELEASE_SEMVER.img.sig \
 https://tails.boum.org/torrents/tails-amd64-$TAILS_RELEASE_SEMVER.img.sig
 ```
 
+---
+
 ### Step 3: Import the Tails signing key (only needed once):
+
 ```sh
 curl https://tails.boum.org/tails-signing.key | gpg --import
 ```
 
+---
+
 ### Step 4: Verify the downloaded image:
+
 ```sh
 gpg --verify ~/Downloads/tails-amd64-$TAILS_RELEASE_SEMVER.img.sig
 ```
 
 > ⚠️ Do not proceed if the verification fails.
+
+---
 
 ### Step 5: Flash Tails to USB
 
@@ -123,6 +144,8 @@ sudo dd bs=1m if=$HOME/Downloads/tails-amd64-6.18.img of=/dev/rdiskn
 sudo diskutil unmountDisk /dev/diskn
 ```
 
+---
+
 ### Step 6. Boot into Tails on Mac:
 
 **1.** Insert USB stick.
@@ -139,8 +162,11 @@ Once Tails boots:
 - Click **Start Tails**.
 - MAC address spoofing is enabled by default.
 
+---
 
 ## 3. Installing Tails from Windows
+
+---
 
 ### Step 1: Download Tails
 
@@ -150,11 +176,15 @@ Once Tails boots:
 
 **3.** Save it to your **Downloads** folder or another accessible location.
 
+---
+
 ### Step 2: Verify the Image
 
 - On the download page, click **“Select download to verify”**.
 - Choose the `.img` file you downloaded.
 - Verify the file using the provided tool.
+
+---
 
 ### Step 3: Download and Launch Rufus
 
@@ -169,6 +199,7 @@ Once Tails boots:
 > *“Do you want to allow this app to make changes to your device?”*
 - In the update policy dialog, click **No**.
 
+---
 
 ### Step 4: Create the Bootable USB
 
@@ -184,6 +215,7 @@ Once Tails boots:
 
 **4.** Once complete, click **CLOSE**.
 
+---
 
 ### Step 5: Boot into Tails
 
@@ -197,6 +229,7 @@ Once Tails boots:
 
 Your PC will boot into the Tails welcome screen.
 
+---
 
 ### Step 6: First-Time Tails Setup
 
