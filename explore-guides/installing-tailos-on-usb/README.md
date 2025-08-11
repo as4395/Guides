@@ -170,3 +170,58 @@ Once Tails boots:
 - In the update policy dialog, click **No**.
 
 
+### Step 4: Create the Bootable USB
+
+**1.** In Rufus:
+- Select the **Tails** `.img` file as the ISO.
+- Insert your USB stick.
+- Rufus will detect it.
+- ⚠️ **Warning**: All data on the USB will be erased. Back up anything important first.
+
+**2.** Click **START**.
+
+**3.** Confirm the data loss warning by clicking **OK**.
+
+**4.** Once complete, click **CLOSE**.
+
+
+### Step 5: Boot into Tails
+
+**1.** Restart your PC.
+
+**2.** While holding **Shift**, click **Restart** from the Windows menu.
+
+**3.** On reboot:
+- Click **Use a device**
+- Choose your **USB drive**
+
+Your PC will boot into the Tails welcome screen.
+
+
+### Step 6: First-Time Tails Setup
+
+**1.** Choose:
+- **Language**
+- **Keyboard Layout**
+- **Region Format**
+
+**2.** Enable **Persistent Storage** (optional):
+
+- Click **Create Persistent Storage**
+- Review info, then click **Continue**
+- Enter a strong **passphrase**, then confirm it
+- Tails will confirm storage creation and allow enabling:
+  - Network Connections
+  - Welcome Screen
+  - Other app settings
+
+**3.** Close the Persistent Storage window.
+
+**4.** Set up your **Wi-Fi** or **Ethernet** connection:
+
+- **Ethernet** is preferred for anonymity and stability.
+- Tails will connect to **Tor** automatically.
+
+**5.** You can optionally configure a Tor Bridge if you suspect your network is monitoring or blocking Tor traffic.
+
+--- 
