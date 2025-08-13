@@ -1,4 +1,4 @@
-# Run Your Own LLM Locally
+# Run Your LLM Locally
 
 
 If you use ChatGPT or any other AI regularly, you can try asking it for a detailed summary of everything it knows about you or even ask it to tell you something that you don’t know about yourself. For me, it shared my average message length in characters. This prompted me to look into whether it was possible to install a local LLM on my MacBook. There is a wide range of local LLM models that can be downloaded and run on any computer. Your options are based by your computer’s processing power. I downloaded an open-source model called Lllama with 8 billion parameters. I also installed a local interface that runs in the browser. It is offline and does not send any data to a server.
