@@ -62,7 +62,7 @@ You can generate one from your Hugging Face account settings.
   huggingface-cli login
   ```
 
-**3. **'mlx-lm' Prerequsities.**
+**3. 'mlx-lm' Prerequsities.**
 'mlx-lm' requires Python 3.9 or newer. You can check your version with 
 ```bash
 python3 --version
@@ -87,7 +87,7 @@ Run the following command to install mlx-lm. The `transformers` library is a key
 python3 -m pip install mlx-lm
 ```
 
-**3. Run the Llama 3 Model**:
+**4. Run the Llama 3 Model**:
 The `mlx_lm` command will download the model files and start the chat session.
 The initial download will take a while.
   ```bash
@@ -109,7 +109,6 @@ The initial download will take a while.
 
 ## Set Up Alias for Easy Access to the Model
 
-
 To run the Llama model easily using the `llm` command, you can create an alias. 
 This saves you from typing the full command every time.
 
@@ -121,7 +120,7 @@ Depending on which shell you use, open the appropriate configuration file in a t
 
 For example, if you use Zsh:
 
-  ```bash
+  ```zsh
   nano ~/.zshrc
   ```
 
@@ -134,7 +133,7 @@ At the end of the file, add the following line to create the alias:
 **3. Save and Reload**:
 
 After saving the file, reload the profile to apply the changes:
-```bash
+```zsh
 source ~/.zshrc  # For Zsh
 ```
 Or for Bash:
