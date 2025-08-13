@@ -4,9 +4,15 @@ These guides help you improve your digital privacy and security across apps and 
 
 ## Guides
 
-- [Configure macOS for Privacy and Security](./macos.md)
-- [Configure Firefox for Privacy and Security](./firefox.md)
-- [Configure BurpSuite Proxy with Firefox on macOS](./burpsuite-firefox-proxy.md)
+- [Case Studies](https://github.com/as4395/guides/tree/main/explore-guides/case-studies)
+- [Configure Burp Suite Proxy with Firefox on MacOS](https://github.com/as4395/guides/blob/main/explore-guides/configure-burpsuite-proxy-with-firefox-on-macos/README.md)
+- [Configure Firefox for Privacy and Security](https://github.com/as4395/guides/tree/main/explore-guides/how-to-configure-firefox-for-privacy-and-security)
+- [How to Configure iOS for Privacy and Security](https://github.com/as4395/guides/tree/main/explore-guides/how-to-configure-ios-for-privacy-and-security)
+- [How to Configure MacOS for Privacy and Security](https://github.com/as4395/guides/tree/main/explore-guides/how-to-configure-macos-for-privacy-and-security)
+- [How to Stay Anonymous Online](https://github.com/as4395/guides/tree/main/explore-guides/how-to-stay-anonymous-online)
+- [Installing Tails on USB](https://github.com/as4395/guides/tree/main/explore-guides/installing-tailos-on-usb)
+- [Run Your LLM Locally](https://github.com/as4395/guides/tree/main/explore-guides/run-your-llm-locally)
+- [Stop Using VPNs for Privacy](https://github.com/as4395/guides/tree/main/explore-guides/stop-using-vpns-for-privacy)
 
 ## Philosophy
 
