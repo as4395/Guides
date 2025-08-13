@@ -26,9 +26,9 @@ If you use ChatGPT or any other AI regularly, you can try asking it for a detail
 
 **6. Install Open WebUI's dependencies using `uv`**:
 
-This command reads the `requirements.txt` file and installs all necessary packages.
+This command installs the 'uv' runtime manager for MacOS.
   ```bash
-  uv pip install -r requirements.txt
+curl -LsSf https://astral.sh/uv/install.sh | sh
   ```
 
 **7. Run the Open WebUI server**:
@@ -37,7 +37,7 @@ This command starts the web server. The output will show that it’s running. Th
   ```bash
   DATA_DIR=~/.open-webui uvx --python 3.11 open-webui@latest serve
   ```
-Once you run the final command, Open WebUI will be running. You can then open your web browser and go to [http://localhost:8080](http://localhost:8080) to access the user interface.
+Once you run the final command, Open WebUI will be running. You can then open your web browser and go to [http://localhost:8080](http://localhost:8080) to access the user interface. Create an Open WebUI account and sign in to the platform. 
 
 ---
 
@@ -49,6 +49,7 @@ which is much more accurate than the 8 billion parameter model locally without c
 This requires using Apple Silicon.
 
 **Steps:**
+
 **1. Install the required MLX-LM library** (optimized for Apple Silicon):
   ```bash
   pip3 install mlx-lm
@@ -61,13 +62,49 @@ You can generate one from your Hugging Face account settings.
   huggingface-cli login
   ```
 
+**3. **'mlx-lm' Prerequsities.**
+'mlx-lm' requires Python 3.9 or newer. You can check your version with 
+```bash
+python3 --version
+```
+You can check if `pip` (Python's package manager) is installed with
+```bash
+python3 -m pip --version
+```
+
+If `pip` requires an update, run:
+```bash
+python3 -m pip install --upgrade pip`
+```
+
+To confirm that the upgrade was successful, you can check `pip`'s version.
+```bash
+python3 -m pip --version
+```
+
+Run the following command to install mlx-lm. The `transformers` library is a key dependency for accessing models from Hugging Face.
+```bash
+python3 -m pip install mlx-lm
+```
+
 **3. Run the Llama 3 Model**:
 The `mlx_lm` command will download the model files and start the chat session.
 The initial download will take a while.
   ```bash
   mlx_lm chat --model mlx-community/Llama-3.3-70B-Instruct-8bit
-  ```
-
+ ```
+ ```bash
+ Calling `python -m mlx_lm.chat...` directly is deprecated. Use `mlx_lm.chat...` or `python -m mlx_lm chat ...` instead.
+ Fetching 13 files:   0%|                                 | 0/13 [00:00<?, ?it/s]
+ model-00008-of-00008.safetensors:  38%|█▌  | 1.01G/2.65G [07:59<07:36, 3.60MB/s]
+ model-00005-of-00008.safetensors:  18%|▉    | 941M/5.29G [08:49<19:05, 3.80MB/s]
+ model-00004-of-00008.safetensors:   1%|   | 67.1M/5.29G [07:19<9:08:03, 159kB/s]
+ model-00001-of-00008.safetensors:  19%|▊   | 1.01G/5.27G [08:43<18:48, 3.78MB/s]
+ model-00003-of-00008.safetensors:   4%|▏   | 201M/5.29G [08:49<3:16:28, 432kB/s]
+ model-00002-of-00008.safetensors:   3%|    | 134M/5.29G [08:41<4:49:50, 297kB/s]
+ model-00007-of-00008.safetensors:   1%|   | 67.8M/5.29G [08:56<8:16:10, 176kB/s]
+ model-00006-of-00008.safetensors:   3%|    | 134M/5.29G [08:39<4:39:42, 307kB/s]
+ ```
 ---
 
 ## Set Up Alias for Easy Access to the Model
